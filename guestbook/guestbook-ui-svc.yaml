@@ -3,8 +3,13 @@ kind: Service
 metadata:
   name: guestbook-ui
 spec:
+  type: LoadBalancer
+  # Expose the UI on the minikube nodes' external IPs at http://<ip>:7001
+  externalIPs:
+  - 10.10.10.250
+  - 10.10.10.72
   ports:
-  - port: 80
+  - port: 7001
     targetPort: 80
   selector:
     app: guestbook-ui
