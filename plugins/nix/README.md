@@ -131,7 +131,7 @@ data:
 
 ```
 argocd app create simple-nginx \
-    --repo https://github.com/argoproj/argocd-example-apps \
+    --repo https://github.com/any2names/argocd-example-apps-any2names \
     --path plugins/nix \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default

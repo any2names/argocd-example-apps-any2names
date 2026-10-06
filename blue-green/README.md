@@ -7,7 +7,7 @@ This example demonstrates how to implement blue-green deployment via [Argo Rollo
 2. Create a sample application and sync it.
 
 ```
-argocd app create --name blue-green --repo https://github.com/argoproj/argocd-example-apps --dest-server https://kubernetes.default.svc --dest-namespace default --path blue-green && argocd app sync blue-green
+argocd app create --name blue-green --repo https://github.com/any2names/argocd-example-apps-any2names --dest-server https://kubernetes.default.svc --dest-namespace default --path blue-green && argocd app sync blue-green
 ```
 
 Once the application is synced you can access it using `blue-green-helm-guestbook` service.

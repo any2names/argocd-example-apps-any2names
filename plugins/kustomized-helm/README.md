@@ -28,7 +28,7 @@ Notes:
 ```
 argocd app create kustomized-helm \
     --config-management-plugin kustomized-helm \
-    --repo https://github.com/argoproj/argocd-example-apps \
+    --repo https://github.com/any2names/argocd-example-apps-any2names \
     --path plugins/kustomized-helm \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default
