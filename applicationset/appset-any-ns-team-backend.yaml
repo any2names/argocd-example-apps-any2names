@@ -16,7 +16,7 @@ spec:
     spec:
       project: team-backend
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps
+        repoURL: https://github.com/any2names/argocd-example-apps-any2names
         targetRevision: HEAD
         path: lightweight/app-b
       destination:

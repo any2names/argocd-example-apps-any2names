@@ -1,5 +1,5 @@
 # Pull Request generator
-# Queries the GitHub API for open PRs against argoproj/argocd-example-apps.
+# Queries the GitHub API for open PRs against any2names/argocd-example-apps-any2names.
 # Filtered by a label that no PR carries, so this generator returns zero matches
 # and generates zero Applications. Demonstrates the "quiet zero-result" case:
 # the ApplicationSet itself stays healthy with an empty result.
@@ -18,8 +18,8 @@ spec:
   generators:
     - pullRequest:
         github:
-          owner: argoproj
-          repo: argocd-example-apps
+          owner: any2names
+          repo: argocd-example-apps-any2names
           labels:
             - argocd-applicationset-demo
         requeueAfterSeconds: 1800
@@ -29,7 +29,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps
+        repoURL: https://github.com/any2names/argocd-example-apps-any2names
         targetRevision: '{{head_sha}}'
         path: lightweight/app-a
       destination:
