@@ -41,6 +41,10 @@ at this fork. The Pull Request generator in
 The `argocd app create --repo ...` examples in [blue-green/README.md](blue-green/README.md) and
 the `plugins/*/README.md` files use this fork's URL.
 
+The root [README.md](README.md) app table links each app to the local Argo CD UI at
+`http://10.10.10.222:8002`. The upstream status badges were removed because GitHub can't load
+images from a private IP.
+
 ## Syncing with upstream
 
 The `repoURL` changes conflict with upstream on every update that touches those lines. To pull in
